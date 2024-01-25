@@ -1,0 +1,58 @@
+html{
+    box-sizing: border-box; /* Hack para Box Model*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+} /* Con esto, el paddig NO modifica ya el width: px */
+body{
+    font-size: 16px;
+    font-family: 'Krub', sans-serif;
+    /* Cambiar color de fondo degradado */
+    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100% ); /* hacia donde va el degradado | el color de donde empieza%| hacia que color va a ir que tanto aplicara el color%*/
+} /* Estas 6 lineas hacen un cambio potencial en los rems y sea mas sencillo de utilizar*/
+
+
+.container{
+    width: 80%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bh-header{
+    /* background-imagen: url(../assets/images/bg-header.jpg); */
+    background-imagen: url(../assets/images/back1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 18.75rem;
+}
+
+.bg-navbar{
+    background-color: rgb(0 0 0 /70%);
+    padding: 1.5rem 0;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+}
+
+.navbar-nav{
+    background-color: rgb(0 0 0 /75%);
+    padding: 1rem;
+    border-radius: .3rem;
+}
+
+.nav-link{
+    color: white;
+    font-size: 1rem;
+    padding: .5rem;
+    text-decoration: none;
+    display: inline-block;
+}
+.nav-link:hover{
+    background-color: white;
+    color: black;
+    border-radius: .5rem;
+}
