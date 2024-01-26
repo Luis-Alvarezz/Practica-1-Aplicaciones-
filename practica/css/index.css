@@ -6,12 +6,11 @@ html{
 } /* Con esto, el paddig NO modifica ya el width: px */
 body{
     font-size: 16px;
-    font-family: 'Krub', sans-serif;
+    font-family: 'Rubik', sans-serif;
     /* Cambiar color de fondo degradado */
-    background-image: linear-gradient(to top, var(--grisClaro) 0%, var(--blanco) 100% ); /* hacia donde va el degradado | el color de donde empieza%| hacia que color va a ir que tanto aplicara el color%*/
-} /* Estas 6 lineas hacen un cambio potencial en los rems y sea mas sencillo de utilizar*/
+} 
 
-
+/**  D E C O R A C I O N   D E   B A R R A   D E   N A V E G A C I O N **/
 .container{
     width: 80%;
     max-width: 1280px;
@@ -19,40 +18,42 @@ body{
     margin-right: auto;
 }
 
-.bh-header{
+.bg-header{
     /* background-imagen: url(../assets/images/bg-header.jpg); */
-    background-imagen: url(../assets/images/back1.jpg);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    height: 18.75rem;
+    background-repeat: no-repeat; /* Para NO repetir imagen al mayor escala de pantalla*/
+    background-position: center; /* Posicion dela imagen de fondo*/
+    background-size: cover; /* Tomar todo  el ancho y NO se corte*/
+    height: 18.75em;
 }
 
 .bg-navbar{
     background-color: rgb(0 0 0 /70%);
-    padding: 1.5rem 0;
+    padding: 1.5em 0;
 }
 
 .navbar{
     display: flex;
+    flex-direction: column;
     align-items: center;
+    /* opcion 1-> con flex en row: justify-content: center */
 }
 
 .navbar-nav{
     background-color: rgb(0 0 0 /75%);
-    padding: 1rem;
-    border-radius: .3rem;
+    padding: 1em;
+    border-radius: .3em;
+
 }
 
 .nav-link{
     color: white;
-    font-size: 1rem;
-    padding: .5rem;
+    font-size: 1em;
+    padding: .5em;
     text-decoration: none;
     display: inline-block;
 }
 .nav-link:hover{
     background-color: white;
     color: black;
-    border-radius: .5rem;
+    border-radius: .5em;
 }
