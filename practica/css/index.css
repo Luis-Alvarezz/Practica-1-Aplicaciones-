@@ -1,0 +1,188 @@
+html{
+    box-sizing: border-box; /* Hack para Box Model*/
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+} /* Con esto, el paddig NO modifica ya el width: px */
+body{
+    font-size: 16px;
+    font-family: 'Rubik', sans-serif;
+    /* Cambiar color de fondo degradado */
+} 
+
+/**  D E C O R A C I O N   D E   B A R R A   D E   N A V E G A C I O N **/
+.container{
+    width: 80%;
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bg-header{
+    /* background-imagen: url(../assets/images/bg-header.jpg); */
+    background-repeat: no-repeat; /* Para NO repetir imagen al mayor escala de pantalla*/
+    background-position: center; /* Posicion dela imagen de fondo*/
+    background-size: cover; /* Tomar todo  el ancho y NO se corte*/
+    height: 18.75em;
+}
+
+.bg-navbar{
+    background-color: rgb(0 0 0 /70%);
+    padding: 1.5em 0;
+}
+
+.navbar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* opcion 1-> con flex en row: justify-content: center */
+}
+.navbar-brand{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 1em;
+    font-weight: 300;
+}
+
+.navbar-brand img{
+    width: 5em;
+}
+
+.navbar-nav{
+    background-color: rgb(0 0 0 /75%);
+    padding: 1em;
+    border-radius: .3em;
+
+}
+
+.nav-link{
+    color: white;
+    font-size: 1em;
+    padding: .5em;
+    text-decoration: none;
+    display: inline-block;
+}
+.nav-link:hover{
+    background-color: white;
+    color: black;
+    border-radius: .5em;
+}
+
+/**  A R T I C U L O S **/
+
+/* Boton */
+.btn{
+    display: inline-block;
+    text-decoration: none; 
+    font-size: 1rem;
+    padding: .5em;
+    margin: 0em 0.1em 0em 0.1em;
+    border-radius: .5em;
+}
+.btn-dark{
+    color: white;
+    background-color: #2F2E2E;
+}
+.btn-primary{
+    color: white;
+    background-color: #214037;
+}
+.btn-secundary{
+    color: white;
+    background-color: #77A699;
+}
+.btn-danger{
+    color: black;
+    background-color: #A6464E;
+}
+.btn-info{
+    color: black;
+    background-color: #E2F2C9;
+}
+
+/* M a i n */
+.main{
+    background-color: white;
+    margin-top: -2rem;
+    border-radius: .3em;
+    padding: .3em;
+}
+.main-title{
+    text-align: center;
+    text-transform: uppercase; /* Modifica a opercase para que se vea diferente*/
+}
+.card{
+    background-color: #A6464E;
+    color: white;
+    overflow:hidden;
+    border-radius: .5em;
+    margin-bottom: 1em;
+    width: 33%;
+    margin: 10px;
+}
+.card-img{
+    width: 100%;
+}
+.card-body{
+    padding: 1em;
+}
+.card-body h5{
+    font-size: 1.5rem;
+    margin: 1em 0 1 em 0;
+    font-weight: 500;
+}
+.card-body p{
+    font-weight: 300;
+}
+.tienda{
+    display: flex;
+    flex-wrap: wrap; /* Por defecto tenemos flex-direction: row*/
+    justify-content: space-around;
+}
+
+/* A P A R T A D O   D E    N O S O T R O S */
+.nosotros{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1em;
+    background-color: #2F2E2E;
+}
+.nosotros-col-img{
+    order: 2;
+    background-image: url('../assets/images/Nosotros-Volkswagen-Logo-history.png');
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 30em;
+}
+.nosotros-col-text{
+    order: 1;
+}
+.nosotros-body{
+    padding: 1em;
+    text-align: center;
+    color: white;
+}
+.nosotros-body h2{
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.nosotros-body p{
+    font-weight: 200;
+}
+.bg-footer{
+    color: white;
+    background-color: #214037;
+}
+.bg-footer p{
+    text-align: center;
+    padding: 1em;
+    margin: 0;
+}
